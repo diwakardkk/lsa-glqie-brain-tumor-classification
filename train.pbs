@@ -1,0 +1,51 @@
+#!/bin/bash
+#PBS -N lsa-glqie-train
+#PBS -o logs/job.out
+#PBS -e logs/job.err
+#PBS -q short
+#PBS -l select=1:ncpus=4:mem=32gb
+#PBS -l walltime=12:00:00
+
+# Exit on any error
+set -e
+
+# Change directory to where the job was submitted from
+if [ -n "$PBS_O_WORKDIR" ]; then
+    cd "$PBS_O_WORKDIR"
+fi
+
+# Create logs directory if it doesn't exist
+mkdir -p logs
+
+# 1. Load any system modules (adjust to match your HPCC configuration)
+# module load python3.9.21
+# module load cuda/11.8
+
+# 2. Activate environment
+# If using conda:
+source /home/harshasiva/lsa-glqie-brain-tumor-classification/enter/etc/profile.d/conda.sh
+conda activate braintumor
+
+# If using virtualenv:
+# source .venv/bin/activate
+
+# 3. Print system diagnostics to job log
+echo "--- Environment Diagnostics ---"
+python -c "import sys; print('Python version:', sys.version)"
+python -c "import torch; print('Torch version:', torch.__version__); print('CUDA available:', torch.cuda.is_available())"
+if python -c "import sys, torch; sys.exit(0 if torch.cuda.is_available() else 1)"; then
+    echo "Using GPU: $(python -c 'import torch; print(torch.cuda.get_device_name(0))')"
+else
+    echo "Warning: Running on CPU only!"
+fi
+echo "--------------------------------"
+
+# 4. Run the experiment
+# Modify --device to cpu if you did not request a GPU partition
+python scripts/train_deep_quantum_fusion.py \
+  --config "config_deep_quantum.yaml" \
+  --data-dir "Dataset" \
+  --output-dir "results_deep_quantum" \
+  --device cpu
+
+echo "Job finished successfully."

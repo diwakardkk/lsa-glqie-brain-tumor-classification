@@ -1,0 +1,102 @@
+{
+  "experiment": {
+    "name": "LSA-GLQIE",
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "n_splits": 5,
+    "repeats": 1,
+    "primary_metric": "macro_f1"
+  },
+  "data": {
+    "image_size": 128,
+    "global_view_size": 64,
+    "local_view_size": 64,
+    "local_margin": 0.15,
+    "percentile_clip_low": 1.0,
+    "percentile_clip_high": 99.0,
+    "cache_processed_data": true,
+    "validate_every_sample": true
+  },
+  "lesion_size": {
+    "quantiles": [
+      0.333333,
+      0.666667
+    ],
+    "allocation_small": [
+      3,
+      9
+    ],
+    "allocation_medium": [
+      6,
+      6
+    ],
+    "allocation_large": [
+      9,
+      3
+    ]
+  },
+  "features": {
+    "method": "dct",
+    "total_coefficients": 12,
+    "exclude_dc": true,
+    "dct_zigzag": true,
+    "robust_clip": 3.0
+  },
+  "quantum": {
+    "num_qubits": 6,
+    "reuploading_rounds": 2,
+    "encoding_gate": "RY_RZ",
+    "entanglement": "ring_cnot",
+    "expectation_dtype": "float64",
+    "state_dtype": "complex128",
+    "shots": 0,
+    "shot_options": [
+      0,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "noise_options": [
+      0.0,
+      0.001,
+      0.005,
+      0.01
+    ]
+  },
+  "classifier": {
+    "name": "multinomial_logistic_regression",
+    "learning_rate": 0.01,
+    "max_epochs": 1000,
+    "weight_decay_candidates": [
+      0.0,
+      0.0001,
+      0.001,
+      0.01
+    ],
+    "early_stopping_patience": 50,
+    "class_weighting": true
+  },
+  "statistics": {
+    "bootstrap_resamples": 1000,
+    "permutation_resamples": 5000,
+    "confidence_level": 0.95,
+    "correction": "holm"
+  },
+  "plots": {
+    "dpi": 300,
+    "png_min_width": 1600,
+    "png_min_height": 1000,
+    "title_font_size": 18,
+    "axis_font_size": 15,
+    "tick_font_size": 12,
+    "legend_font_size": 12
+  },
+  "runtime": {
+    "batch_size": 512,
+    "num_workers": 0
+  }
+}

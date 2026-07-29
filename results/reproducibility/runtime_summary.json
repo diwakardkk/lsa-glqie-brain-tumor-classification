@@ -1,0 +1,10 @@
+{
+  "total_seconds": 285.65534114837646,
+  "device": "cuda",
+  "validation": {
+    "valid": true,
+    "issues": [],
+    "table_count": 6,
+    "figure_count": 8
+  }
+}

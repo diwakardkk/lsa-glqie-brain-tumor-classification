@@ -1,0 +1,10 @@
+{
+  "python": "3.10.18 (main, Jun  5 2025, 13:14:17) [GCC 11.2.0]",
+  "platform": "Linux-3.10.0-1160.el7.x86_64-x86_64-with-glibc2.17",
+  "processor": "x86_64",
+  "device": "cpu",
+  "torch_version": "2.6.0+cu124",
+  "cuda_available": false,
+  "cuda_version": "12.4",
+  "gpu_name": null
+}

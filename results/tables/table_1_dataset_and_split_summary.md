@@ -1,0 +1,6 @@
+| class_label                   |   slice_count |   patient_count |
+|:------------------------------|--------------:|----------------:|
+| 1                             |           708 |              82 |
+| 2                             |          1426 |              89 |
+| 3                             |           930 |              62 |
+| official_fold_patient_leakage |             0 |               0 |

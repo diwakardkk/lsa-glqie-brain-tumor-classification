@@ -1,0 +1,57 @@
+method,method_label,mean,ci95,n,metric
+local_only,Local only,0.23865081857275713,0.03686364689743661,15,patient_macro_f1
+fixed_6g_2l,Fixed global-heavy,0.26452362769462623,0.040280413572879495,15,patient_macro_f1
+fixed_4g_4l,Fixed balanced,0.2696879466098433,0.059390045473491596,15,patient_macro_f1
+random_allocation,Random allocation,0.2734937935280392,0.03869746683481679,15,patient_macro_f1
+shuffled_size_allocation,Shuffled size,0.2813337248203403,0.06050026188251702,15,patient_macro_f1
+proposed_lsa_glqie,LSA-GLQIE,0.2838471270241149,0.04752997032369736,15,patient_macro_f1
+fixed_2g_6l,Fixed local-heavy,0.3706102262628533,0.056528725906969425,15,patient_macro_f1
+global_only,Global only,0.3781219012520898,0.04074900739299671,15,patient_macro_f1
+lesion_size_only,Size only,0.5213850609939169,0.03213927497668824,15,patient_macro_f1
+classical_proposed,Classical LR LSA,0.6946042461100282,0.02840714279507939,15,patient_macro_f1
+svm_classical_proposed,Classical SVM LSA,0.8156852934974246,0.024242832667771188,15,patient_macro_f1
+classical_fixed_4g_4l,Classical LR fixed,0.8207526579947838,0.03507941477500316,15,patient_macro_f1
+deep_quantum_fusion,LSA-DQF,0.8560525035205829,0.03292585395973021,5,patient_macro_f1
+svm_classical_fixed_4g_4l,Classical SVM fixed,0.89242913850155,0.03003512919534036,15,patient_macro_f1
+local_only,Local only,0.31134739204914647,0.032035034757540805,15,patient_balanced_accuracy
+fixed_6g_2l,Fixed global-heavy,0.3216439035298685,0.030056039562119063,15,patient_balanced_accuracy
+shuffled_size_allocation,Shuffled size,0.3461622766447327,0.04318353572826749,15,patient_balanced_accuracy
+random_allocation,Random allocation,0.34993167164219796,0.027967010085027385,15,patient_balanced_accuracy
+fixed_4g_4l,Fixed balanced,0.3557455913157667,0.035911735066586806,15,patient_balanced_accuracy
+proposed_lsa_glqie,LSA-GLQIE,0.38026706886356004,0.026440495362516192,15,patient_balanced_accuracy
+fixed_2g_6l,Fixed local-heavy,0.4079576044488325,0.044082669889517624,15,patient_balanced_accuracy
+global_only,Global only,0.4155629652998074,0.02104050796352786,15,patient_balanced_accuracy
+lesion_size_only,Size only,0.5791043069990439,0.02004084024727629,15,patient_balanced_accuracy
+classical_proposed,Classical LR LSA,0.7081149292552802,0.03169707662748914,15,patient_balanced_accuracy
+classical_fixed_4g_4l,Classical LR fixed,0.8235379289326659,0.03645148248445941,15,patient_balanced_accuracy
+svm_classical_proposed,Classical SVM LSA,0.8348490593227434,0.021834440333323882,15,patient_balanced_accuracy
+deep_quantum_fusion,LSA-DQF,0.8693593054119371,0.026429846551730717,5,patient_balanced_accuracy
+svm_classical_fixed_4g_4l,Classical SVM fixed,0.9038025376183272,0.02592373947505863,15,patient_balanced_accuracy
+fixed_6g_2l,Fixed global-heavy,0.4800827544943049,0.03422679092438722,15,patient_macro_auroc
+local_only,Local only,0.4903668242217027,0.027882706449747843,15,patient_macro_auroc
+fixed_4g_4l,Fixed balanced,0.510489902442171,0.04653549622141216,15,patient_macro_auroc
+random_allocation,Random allocation,0.5254325756644448,0.03959993760499773,15,patient_macro_auroc
+shuffled_size_allocation,Shuffled size,0.5461211500722467,0.04294107514268772,15,patient_macro_auroc
+proposed_lsa_glqie,LSA-GLQIE,0.5664153205917261,0.030804879310346728,15,patient_macro_auroc
+global_only,Global only,0.601631318674158,0.021993300259922945,15,patient_macro_auroc
+fixed_2g_6l,Fixed local-heavy,0.6099046908472135,0.03379601392990524,15,patient_macro_auroc
+lesion_size_only,Size only,0.7238998259685497,0.030460905644500703,15,patient_macro_auroc
+classical_proposed,Classical LR LSA,0.8714564142949407,0.012064984205393502,15,patient_macro_auroc
+svm_classical_proposed,Classical SVM LSA,0.9442139078845039,0.00953279506996894,15,patient_macro_auroc
+classical_fixed_4g_4l,Classical LR fixed,0.9463712443291,0.013189855574996363,15,patient_macro_auroc
+deep_quantum_fusion,LSA-DQF,0.9664116907385665,0.008692600298158186,5,patient_macro_auroc
+svm_classical_fixed_4g_4l,Classical SVM fixed,0.9738433217936625,0.005714270824434287,15,patient_macro_auroc
+fixed_6g_2l,Fixed global-heavy,0.371524094233837,0.024014529963800317,15,patient_macro_auprc
+local_only,Local only,0.37450971869228705,0.021072562494772833,15,patient_macro_auprc
+fixed_4g_4l,Fixed balanced,0.3980141335905589,0.03880761515167222,15,patient_macro_auprc
+random_allocation,Random allocation,0.4072860632387643,0.03003703892801728,15,patient_macro_auprc
+shuffled_size_allocation,Shuffled size,0.42418555963395405,0.02640929290580379,15,patient_macro_auprc
+proposed_lsa_glqie,LSA-GLQIE,0.43937017149316365,0.026889513908903515,15,patient_macro_auprc
+global_only,Global only,0.46948763467731425,0.02451703180847916,15,patient_macro_auprc
+fixed_2g_6l,Fixed local-heavy,0.47040716833477764,0.04165192937644766,15,patient_macro_auprc
+lesion_size_only,Size only,0.5883463642325726,0.039939533625217176,15,patient_macro_auprc
+classical_proposed,Classical LR LSA,0.7778392161596839,0.023671311717812272,15,patient_macro_auprc
+svm_classical_proposed,Classical SVM LSA,0.8860147221067352,0.012993079270690917,15,patient_macro_auprc
+classical_fixed_4g_4l,Classical LR fixed,0.8990601183121644,0.02500626827291945,15,patient_macro_auprc
+deep_quantum_fusion,LSA-DQF,0.9462721354951078,0.01954963415259093,5,patient_macro_auprc
+svm_classical_fixed_4g_4l,Classical SVM fixed,0.9481039850660657,0.009313548630706952,15,patient_macro_auprc

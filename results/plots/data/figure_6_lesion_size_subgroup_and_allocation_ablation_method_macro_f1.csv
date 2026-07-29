@@ -1,0 +1,14 @@
+method,patient_macro_f1
+classical_fixed_4g_4l,0.8207526579947836
+classical_proposed,0.6946042461100282
+fixed_2g_6l,0.37061022626285334
+fixed_4g_4l,0.26968794660984335
+fixed_6g_2l,0.2645236276946263
+global_only,0.3781219012520898
+lesion_size_only,0.5213850609939168
+local_only,0.2386508185727572
+proposed_lsa_glqie,0.2838471270241149
+random_allocation,0.27349379352803926
+shuffled_size_allocation,0.2813337248203403
+svm_classical_fixed_4g_4l,0.8924291385015499
+svm_classical_proposed,0.8156852934974246

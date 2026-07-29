@@ -1,0 +1,9 @@
+figure,name,png,pdf,width,height,file_size,pixel_variance,valid
+1,dataset_overview,results/plots/figure_1_dataset_overview.png,results/plots/figure_1_dataset_overview.pdf,2887,2074,1308569,10952.231622897378,True
+2,method_workflow,results/plots/figure_2_method_workflow.png,results/plots/figure_2_method_workflow.pdf,3184,2074,260527,1758.5656809199738,True
+3,lesion_size_and_allocation_analysis,results/plots/figure_3_lesion_size_and_allocation_analysis.png,results/plots/figure_3_lesion_size_and_allocation_analysis.pdf,3184,2074,366591,3588.580059762245,True
+4,main_performance_comparison,results/plots/figure_4_main_performance_comparison.png,results/plots/figure_4_main_performance_comparison.pdf,3184,2074,382354,5324.917166036092,True
+5,confusion_and_per_class_results,results/plots/figure_5_confusion_and_per_class_results.png,results/plots/figure_5_confusion_and_per_class_results.pdf,3184,2074,313048,4426.569651932326,True
+6,lesion_size_subgroup_and_allocation_ablation,results/plots/figure_6_lesion_size_subgroup_and_allocation_ablation.png,results/plots/figure_6_lesion_size_subgroup_and_allocation_ablation.pdf,3184,2074,368873,3613.177246858438,True
+7,robustness_and_resource_tradeoffs,results/plots/figure_7_robustness_and_resource_tradeoffs.png,results/plots/figure_7_robustness_and_resource_tradeoffs.pdf,3265,2074,470589,3197.7301679664474,True
+8,roc_pr_and_calibration_summary,results/plots/figure_8_roc_pr_and_calibration_summary.png,results/plots/figure_8_roc_pr_and_calibration_summary.pdf,3184,2074,400225,4136.754931410845,True

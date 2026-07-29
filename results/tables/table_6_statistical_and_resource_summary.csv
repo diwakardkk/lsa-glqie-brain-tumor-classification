@@ -1,0 +1,9 @@
+comparison,metric,status,wilcoxon_p,permutation_p,cohen_d,holm_permutation_p,num_qubits,ry_gates,rz_gates,cnot_gates,measurements,nominal_depth
+proposed_lsa_glqie vs global_only,patient_macro_f1,ok,4.708411778890009e-05,0.0,-0.7670592669034516,0.0,,,,,,
+proposed_lsa_glqie vs local_only,patient_macro_f1,ok,0.005677714341630439,0.0094,0.40516479306997877,0.028200000000000003,,,,,,
+proposed_lsa_glqie vs fixed_4g_4l,patient_macro_f1,ok,0.3047167625800782,0.5402,0.09299757991704403,1.0,,,,,,
+proposed_lsa_glqie vs random_allocation,patient_macro_f1,ok,0.5382812738724851,0.5534,0.08579137906170527,1.0,,,,,,
+proposed_lsa_glqie vs classical_proposed,patient_macro_f1,ok,5.170583095745839e-09,0.0,-3.633337798244631,0.0,,,,,,
+proposed_lsa_glqie vs classical_fixed_4g_4l,patient_macro_f1,ok,5.170583095745839e-09,0.0,-4.448848834717895,0.0,,,,,,
+proposed_lsa_glqie vs svm_classical_proposed,patient_macro_f1,ok,5.1059551125445e-09,0.0,-4.799148280888646,0.0,,,,,,
+logical_resources,primary_circuit,ok,,,,,6.0,12.0,12.0,12.0,21.0,6.0

@@ -1,0 +1,7 @@
+| analysis           | status                   | how_to_generate                                             |
+|:-------------------|:-------------------------|:------------------------------------------------------------|
+| Shot robustness    | not_run_in_saved_outputs | rerun with --shots 128, 256, 512, and 1024                  |
+| Effective noise    | not_run_in_saved_outputs | rerun with --noise-level 0.001, 0.005, and 0.01             |
+| ROI perturbation   | not_run_in_saved_outputs | rerun with ROI perturbation configuration                   |
+| Context margin     | not_run_in_saved_outputs | rerun with data.local_margin set to 0, 0.10, 0.15, and 0.25 |
+| Coefficient budget | not_run_in_saved_outputs | rerun with 4, 8, and 12 coefficient budgets                 |

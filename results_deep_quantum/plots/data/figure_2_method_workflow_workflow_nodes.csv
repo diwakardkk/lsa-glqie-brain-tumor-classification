@@ -1,0 +1,6 @@
+step_order,node
+1,Full MRI / tumour mask
+2,Global and local DCT
+3,Lesion-size allocation
+4,6-qubit encoder
+5,Classifier

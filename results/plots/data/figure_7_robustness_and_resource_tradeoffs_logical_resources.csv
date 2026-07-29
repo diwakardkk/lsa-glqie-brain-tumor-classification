@@ -1,0 +1,7 @@
+quantity,value
+Qubits,6
+RY gates,12
+RZ gates,12
+CNOT gates,12
+Measurements,21
+Nominal depth,6

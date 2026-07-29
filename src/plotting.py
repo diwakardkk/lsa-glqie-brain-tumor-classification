@@ -142,8 +142,9 @@ def _overlay_mask(ax: plt.Axes, sample: dict[str, object], title: str) -> None:
     ax.imshow(overlay)
     border = np.asarray(sample.get("tumorBorder", [])).ravel()
     if border.size >= 4:
-        xs = border[0::2]
-        ys = border[1::2]
+        # Swap x and y to match Python's row-major (transposed) MATLAB loader format
+        xs = border[1::2]
+        ys = border[0::2]
         ax.plot(np.r_[xs, xs[0]], np.r_[ys, ys[0]], color="#F0E442", linewidth=1.8)
     ax.set_title(title)
     ax.set_xticks([])

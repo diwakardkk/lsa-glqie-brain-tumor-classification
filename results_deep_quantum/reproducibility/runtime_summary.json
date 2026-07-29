@@ -1,0 +1,12 @@
+{
+  "output_dir": "results_deep_quantum",
+  "device": "cpu",
+  "feature_shape": [
+    3064,
+    3,
+    1280
+  ],
+  "summary_table": "results_deep_quantum/tables/deep_quantum_summary.csv",
+  "figure_count": 8,
+  "total_seconds": 1882.983683347702
+}

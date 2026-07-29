@@ -1,0 +1,30 @@
+{
+  "backbone": "efficientnet_b0",
+  "weights": "imagenet",
+  "image_size": 224,
+  "num_qubits": 6,
+  "reuploading_rounds": 2,
+  "vqc_layers": 2,
+  "hidden_dim": 128,
+  "dropout": 0.25,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "max_epochs": 120,
+  "patience": 18,
+  "batch_size": 128,
+  "feature_batch_size": 64,
+  "folds": 5,
+  "seed": 11,
+  "quick_max_samples": 0,
+  "lesion_quantiles": [
+    0.333333,
+    0.666667
+  ],
+  "plot_dpi": 300,
+  "plot_png_min_width": 1600,
+  "plot_png_min_height": 1000,
+  "plot_title_font_size": 18,
+  "plot_axis_font_size": 15,
+  "plot_tick_font_size": 12,
+  "plot_legend_font_size": 12
+}
